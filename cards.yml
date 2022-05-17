@@ -1,0 +1,11 @@
+cards:
+  msd: Welcome to the EazyBank Cards Default application
+  build-version: 3
+  mailDetails:
+    hostName: default-cards@eazybytes.com
+    port: 9002
+    from: default-cards@eazybytes.com
+    subject: your cards Details from Eazy Bank default Enviroment
+  activeBranches[0]: Mumbai
+  activeBranches[1]: London
+  activeBranches[2]: Washington

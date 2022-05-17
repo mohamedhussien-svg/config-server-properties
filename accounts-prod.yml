@@ -1,0 +1,13 @@
+accounts:
+  msd: Welcome to the EazyBank accounts Prod application
+  build-version: 1
+  mailDetails:
+    hostName: prod-accounts@eazybytes.com
+    port: 9010
+    from: prod-accounts@eazybytes.com
+    subject: your accounts Details from Eazy Band Production Enviroment
+  activeBranches[0]: Hyderabad
+  activeBranches[1]: Paris
+  activeBranches[2]: NewYork
+
+

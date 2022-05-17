@@ -1,0 +1,11 @@
+loans:
+  msd: Welcome to the EazyBank Loans Dev application
+  build-version: 2
+  mailDetails:
+    hostName: dev-loans@eazybytes.com
+    port: 9021
+    from: dev-loans@eazybytes.com
+    subject: your Loan Details from Eazy Band Dev Enviroment
+  activeBranches[0]: Chennai
+  activeBranches[1]: Berlin
+  activeBranches[2]: Indianapollis

@@ -1,0 +1,12 @@
+cards:
+  msd: Welcome to the EazyBank cards Dev application
+  build-version: 2
+  mailDetails:
+    hostName: dev-cards@eazybytes.com
+    port: 9022
+    from: dev-cards@eazybytes.com
+    subject: your cards Details from Eazy Band Dev Enviroment
+  activeBranches[0]: Chennai
+  activeBranches[1]: Berlin
+  activeBranches[2]: Indianapollis
+

@@ -1,0 +1,13 @@
+accounts:
+  msd: Welcome to the EazyBank accounts Dev application
+  build-version: 2
+  mailDetails:
+    hostName: dev-accounts@eazybytes.com
+    port: 9020
+    from: dev-accounts@eazybytes.com
+    subject: your accounts Details from Eazy Band Dev Enviroment
+  activeBranches[0]: Chennai
+  activeBranches[1]: Berlin
+  activeBranches[2]: Indianapollis
+
+

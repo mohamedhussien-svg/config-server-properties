@@ -1,0 +1,11 @@
+loans:
+  msd: Welcome to the EazyBank Loans Prod application
+  build-version: 1
+  mailDetails:
+    hostName: prod-loans@eazybytes.com
+    port: 9011
+    from: prod-loans@eazybytes.com
+    subject: your Loan Details from Eazy Band Production Enviroment
+  activeBranches[0]: Hyderabad
+  activeBranches[1]: Paris
+  activeBranches[2]: NewYork

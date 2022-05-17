@@ -1,0 +1,12 @@
+accounts:
+  msd: Welcome to the EazyBank accounts Default application
+  build-version: 3
+  mailDetails:
+    hostName: default-accounts@eazybytes.com
+    port: 9000
+    from: default-accounts@eazybytes.com
+    subject: your accounts Details from Eazy Bank default Enviroment
+  activeBranches[0]: Mumbai
+  activeBranches[1]: London
+  activeBranches[2]: Washington
+
