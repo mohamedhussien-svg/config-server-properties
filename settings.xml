@@ -1,0 +1,99 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+        http://maven.apache.org/xsd/settings-1.0.0.xsd">
+ 
+  <!-- This proxy is the one you configured in "Setup Dev OS and Bosch Proxy". If you're using your Host OS then 127.0.0.1 if you're using the VM OS then 10.0.2.2 -->
+  <!-- Note: If you're external there's no need to make these proxy configurations so you must delete this part (from <proxies> to </proxies>) -->
+  <proxies>
+    <proxy>
+        <id>1</id>
+            <active>true</active>
+            <protocol>http</protocol>
+            <host>10.0.2.2</host>
+            <port>18080</port>
+    </proxy>
+    <proxy>
+        <id>2</id>
+            <active>true</active>
+            <protocol>https</protocol>
+            <host>10.0.2.2</host>
+            <port>18080</port>
+    </proxy>
+  </proxies>
+ 
+  <!-- This sends everything to our Nexus Server. -->
+  <mirrors>
+    <mirror>
+      <id>nexus</id>
+      <mirrorOf>*</mirrorOf>
+      <url>https://nexus.cbsdev.net/repository/maven-all</url>
+    </mirror>
+  </mirrors>
+ 
+  <profiles>
+    <profile>
+      <id>cbs-settings</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <repositories>
+        <repository>
+          <id>central</id>
+          <url>https://nexus.cbsdev.net/repository/maven-all</url>
+        </repository>
+        <repository>
+          <id>release.repository</id>
+          <url>https://nexus.cbsdev.net/repository/maven-releases</url>
+        </repository>
+        <repository>
+          <id>snapshot.repository</id>
+          <url>https://nexus.cbsdev.net/repository/maven-snapshots</url>
+          <snapshots>
+            <enabled>true</enabled>
+            <updatePolicy>always</updatePolicy>
+          </snapshots>
+        </repository>
+        <repository>
+          <id>manual.repository</id>
+          <url>https://nexus.cbsdev.net/repository/maven-manual</url>
+        </repository>
+      </repositories>
+      <pluginRepositories>
+        <pluginRepository>
+          <id>central</id>
+          <url>https://nexus.cbsdev.net/repository/maven-all</url>
+        </pluginRepository>
+      </pluginRepositories>
+    </profile>
+  </profiles>
+ 
+  <activeProfiles>
+    <activeProfile>cbs-settings</activeProfile>
+  </activeProfiles>
+ 
+  <!-- This configures access to our Nexus Server using your credentials -->
+  <servers>
+    <server>
+      <id>nexus</id>
+      <username>SOM1SF</username>
+      <password>{77DG3WYeVYAH2Ukan9uZcDF3GNKyKoacLBnJx+5IKt4=}</password>
+    </server>
+    <server>
+      <id>release.repository</id>
+      <username>SOM1SF</username>
+      <password>{77DG3WYeVYAH2Ukan9uZcDF3GNKyKoacLBnJx+5IKt4=}</password>
+    </server>
+    <server>
+      <id>snapshot.repository</id>
+      <username>SOM1SF</username>
+      <password>{77DG3WYeVYAH2Ukan9uZcDF3GNKyKoacLBnJx+5IKt4=}</password>
+    </server>
+    <server>
+      <id>manual.repository</id>
+      <username>SOM1SF</username>
+      <password>{77DG3WYeVYAH2Ukan9uZcDF3GNKyKoacLBnJx+5IKt4=}</password>
+    </server>
+  </servers>
+ 
+</settings>
