@@ -15,3 +15,4 @@ Host *
     
     
 ssh -v frankfurt-bastion.cbs.boschsecurity.com
+ssh -v interactive-eu-central-1.monic.cbsinternal.net
