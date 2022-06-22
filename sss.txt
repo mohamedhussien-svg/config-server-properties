@@ -20,3 +20,7 @@ $ python3 -c 'import crypt,getpass; print("{CRYPT}"+crypt.crypt(getpass.getpass(
 
 {CRYPT}$6$rounds=100000$XIxneguguGhQWyDI$M341L9.Hl7reUShDssfpFp751ZG/MisX7oV.NkeN4CsX49OrmvXh.mjezS309uFPGWuoVx7nUg2j8enKlJ8Qo0
 
+region = eu-central-1
+output = json
+proxy=http://10.0.2.2:18080
+
