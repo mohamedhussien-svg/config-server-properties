@@ -24,3 +24,4 @@ region = eu-central-1
 output = json
 proxy=http://10.0.2.2:18080
 
+https://gitlab.cbsdev.net/users/sign_in
