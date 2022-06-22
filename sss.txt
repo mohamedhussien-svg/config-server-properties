@@ -17,3 +17,5 @@ Host *
 ssh -v frankfurt-bastion.cbs.boschsecurity.com
 ssh -v interactive-eu-central-1.monic.cbsinternal.net
 $ python3 -c 'import crypt,getpass; print("{CRYPT}"+crypt.crypt(getpass.getpass(), crypt.mksalt(crypt.METHOD_SHA512).replace("$6$", "$6$rounds=100000$")))'
+
+{CRYPT}$6$rounds=100000$MDK9NkVt/dKZx5hG$LftSzU2BJKZHz9DT.xUmx3.ZbopqiVLb.T2UP9/NppxYZVUW4hAZm13912o/VdBF332FU6Dh9rK.DyA4BMBTL1
