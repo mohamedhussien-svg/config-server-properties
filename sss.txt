@@ -16,4 +16,4 @@ Host *
     
 ssh -v frankfurt-bastion.cbs.boschsecurity.com
 ssh -v interactive-eu-central-1.monic.cbsinternal.net
-import passlib,getpass; from passlib.hash import ldap_sha512_crypt; print(passlib.hash.ldap_sha512_crypt.using(salt_size=16).using(rounds=100000).hash(getpass.getpass()));
+$ python3 -c 'import crypt,getpass; print("{CRYPT}"+crypt.crypt(getpass.getpass(), crypt.mksalt(crypt.METHOD_SHA512).replace("$6$", "$6$rounds=100000$")))'
